@@ -67,3 +67,22 @@ footer {
   height: 50px;
   background-color: #aaaaaa;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    margin: 50px auto;
+    display: block;
+  }
+  .box {
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .box:nth-child(1),
+  .box:nth-child(2) {
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
