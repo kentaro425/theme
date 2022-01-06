@@ -5,7 +5,6 @@
 }
 
 header {
-  width: 100%;
   height: 50px;
   background-color: #ff9a4b;
 }
@@ -60,7 +59,24 @@ h3 {
 }
 
 footer {
-  width: 100%;
   height: 50px;
   background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .box,
+  .box:nth-last-child(1) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .box:nth-child(1),
+  .box:nth-child(2) {
+    margin-bottom: 20px;
+  }
 }
